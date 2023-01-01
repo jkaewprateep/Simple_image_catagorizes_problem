@@ -94,7 +94,8 @@ for i in range(len(list_Image)):
 	plt.yticks([])
 	plt.grid(False)
 	plt.imshow(list_file_actual[i])
-	plt.xlabel(str(round(score[tf.math.argmax(score).numpy()].numpy(), 2)) + ":" +  str(list_label_actual[tf.math.argmax(score)]))
+	plt.xlabel(str(round(score[tf.math.argmax(score).numpy()].numpy(), 2)) + ":" 
+		+  str(list_label_actual[tf.math.argmax(score)]))
 ```
 ## TF-Lite for simple Devices ##
 
